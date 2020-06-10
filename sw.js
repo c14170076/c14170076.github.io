@@ -1,7 +1,13 @@
+var ver=1;
+var CACHE_STATIC_NAME = 'static-v'+ver;
+
 self.addEventListener('install', function(event) {
+  console.log('[Service Worker] Installing Service Worker ...', event);
+  self.skipWaiting();
   event.waitUntil(
-    caches.open('first-app')
+    caches.open(CACHE_STATIC_NAME)
       .then(function(cache) {
+        console.log('[Service Worker] Precaching App Shell');
         cache.addAll([
           '/',
           '/index.html',
@@ -15,11 +21,11 @@ self.addEventListener('install', function(event) {
           '/src/images/icons/app-icon-512x512.png',
           '/src/css/app.css',
           '/src/js/app.js'
-        ])
+        ]);
       })
-  );
-  return self.clients.claim();
+  )
 });
+
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(
