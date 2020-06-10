@@ -22,7 +22,8 @@ self.addEventListener('install', function(event) {
           '/src/images/icons/app-icon-384x384.png',
           '/src/images/icons/app-icon-512x512.png',
           '/src/css/app.css',
-          '/src/js/app.js'
+          '/src/js/app.js',
+          '/src/images/logo.png'
         ]);
       })
   )
