@@ -7,6 +7,7 @@ self.addEventListener('install', function(event) {
     caches.open(CACHE_STATIC_NAME)
       .then(function(cache) {
         console.log('[Service Worker] Precaching App Shell');
+        self.skipWaiting();
         cache.addAll([
           '/',
           '/index.html',
