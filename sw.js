@@ -1,4 +1,4 @@
-var ver=2;
+var ver=1;
 var CACHE_STATIC_NAME = 'static-v'+ver;
 
 self.addEventListener('install', function(event) {
