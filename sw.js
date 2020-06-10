@@ -27,13 +27,13 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('activate', function(event) {
+          
+  console.log('asd');
   console.log('[Service Worker] Activating Service Worker ....', event);
   event.waitUntil(
     caches.keys()
       .then(function(keyList) {
         return Promise.all(keyList.map(function(key) {
-          
-  console.log('asd');
           if (key !== CACHE_STATIC_NAME) {
             console.log('[Service Worker] Removing old cache.', key);
             return caches.delete(key);
