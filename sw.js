@@ -3,8 +3,8 @@ var CACHE_STATIC_NAME = 'cache1';
 
 self.addEventListener('install', function(event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
-  event.waitUntil(
         self.skipWaiting();
+  event.waitUntil(
     caches.open(CACHE_STATIC_NAME)
       .then(function(cache) {
         console.log('[Service Worker] Precaching App Shell');
