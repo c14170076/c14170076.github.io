@@ -1,4 +1,4 @@
-var CACHE_STATIC_NAME = 'cache';
+var CACHE_STATIC_NAME = 'cache1';
 
 
 self.addEventListener('install', function(event) {
