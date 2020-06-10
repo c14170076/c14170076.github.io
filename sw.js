@@ -1,4 +1,4 @@
-var ver=2;
+var ver=1;
 var CACHE_STATIC_NAME = 'static-v'+ver;
 var CACHE_DYNAMIC_NAME = 'dynamic-v'+ver;
 
@@ -21,7 +21,6 @@ self.addEventListener('install', function(event) {
           '/src/images/icons/app-icon-256x256.png',
           '/src/images/icons/app-icon-384x384.png',
           '/src/images/icons/app-icon-512x512.png',
-          'src/images/icon.png',
           '/src/css/app.css',
           '/src/js/app.js'
         ]);
