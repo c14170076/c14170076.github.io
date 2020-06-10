@@ -25,7 +25,9 @@ self.addEventListener('install', function(event) {
           '/src/js/app.js',
           '/src/images/logo.png',
           '/tambahan/jquery-3.5.1.slim.min.js',
-          '/tambahan/popper.min.js'
+          '/tambahan/popper.min.js',
+          '/tambahan/bootstrap.min.js',
+          '/tambahan/bootstrap.min.css'
         ]);
       })
   )
