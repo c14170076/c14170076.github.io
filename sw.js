@@ -32,6 +32,8 @@ self.addEventListener('activate', function(event) {
     caches.keys()
       .then(function(keyList) {
         return Promise.all(keyList.map(function(key) {
+          
+  console.log('asd');
           if (key !== CACHE_STATIC_NAME) {
             console.log('[Service Worker] Removing old cache.', key);
             return caches.delete(key);
