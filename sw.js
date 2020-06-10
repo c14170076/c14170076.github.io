@@ -1,5 +1,6 @@
-var ver=2;
+var ver=1;
 var CACHE_STATIC_NAME = 'static-v'+ver;
+var CACHE_DYNAMIC_NAME = 'dynamic-v'+ver;
 
 self.addEventListener('install', function(event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
@@ -11,6 +12,7 @@ self.addEventListener('install', function(event) {
         cache.addAll([
           '/',
           '/index.html',
+          '/offline.html',
           '/manifest.json',
           '/src/images/icons/app-icon-48x48.png',
           '/src/images/icons/app-icon-96x96.png',
@@ -32,7 +34,7 @@ self.addEventListener('activate', function(event) {
     caches.keys()
       .then(function(keyList) {
         return Promise.all(keyList.map(function(key) {
-          if (key !== CACHE_STATIC_NAME) {
+          if (key !== CACHE_STATIC_NAME && key !== CACHE_DYNAMIC_NAME) {
             console.log('[Service Worker] Removing old cache.', key);
             return caches.delete(key);
           }
@@ -48,6 +50,32 @@ self.addEventListener('fetch', function(event) {
     caches.match(event.request)
       .then(function(res) {
         return res;
+      })
+  );
+});
+
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request)
+      .then(function(response) {
+        if (response) {
+          return response;
+        } else {
+          return fetch(event.request)
+            .then(function(res) {
+              return caches.open(CACHE_DYNAMIC_NAME)
+                .then(function(cache) {
+                  cache.put(event.request.url, res.clone());
+                  return res;
+                })
+            })
+            .catch(function(err) {
+              return caches.open(CACHE_STATIC_NAME)
+                .then(function(cache) {
+                  return cache.match('/offline.html');
+                });
+            });
+        }
       })
   );
 });
