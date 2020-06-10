@@ -23,7 +23,9 @@ self.addEventListener('install', function(event) {
           '/src/images/icons/app-icon-512x512.png',
           '/src/css/app.css',
           '/src/js/app.js',
-          '/src/images/logo.png'
+          '/src/images/logo.png',
+          '/tambahan/jquery-3.5.1.slim.min.js',
+          '/tambahan/popper.min.js'
         ]);
       })
   )
