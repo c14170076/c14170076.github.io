@@ -1,4 +1,4 @@
-var ver=4;
+var ver=1;
 var CACHE_STATIC_NAME = 'static-v'+ver;
 var CACHE_DYNAMIC_NAME = 'dynamic-v'+ver;
 
