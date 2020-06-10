@@ -21,7 +21,7 @@ self.addEventListener('install', function(event) {
           '/src/images/icons/app-icon-256x256.png',
           '/src/images/icons/app-icon-384x384.png',
           '/src/images/icons/app-icon-512x512.png',
-          'src/images/icon.php',
+          'src/images/icon.png',
           '/src/css/app.css',
           '/src/js/app.js'
         ]);
