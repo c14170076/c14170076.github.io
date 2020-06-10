@@ -1,4 +1,4 @@
-var CACHE_STATIC_NAME = 'cache';
+var CACHE_STATIC_NAME = 'cache1';
 
 
 self.addEventListener('install', function(event) {
@@ -27,8 +27,6 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('activate', function(event) {
-          
-  console.log('asd');
   console.log('[Service Worker] Activating Service Worker ....', event);
   event.waitUntil(
     caches.keys()
