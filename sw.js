@@ -28,12 +28,7 @@ self.addEventListener('install', function(event) {
           '/tambahan/popper.min.js',
           '/tambahan/bootstrap.min.js',
           '/tambahan/bootstrap.min.css',
-          '/list.html',
-          '/roti1.html',
-          '/roti2.html',
-          '/roti3.html',
-          '/roti4.html',
-          '/roti5.html',
+          
           '/src/images/pic1.jpg',
           '/src/images/pic2.png',
           '/src/images/pic3.jpg',
