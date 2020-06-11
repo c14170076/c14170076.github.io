@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Roti Bakar Hosue</title>
+  <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="boothstrap/css/bootstrap.min.css">
+  <script src="jquery-3.5.1.slim.min.js" ></script>
+  <script src="popper.min.js" ></script>
+  <script src="boothstrap/js/bootstrap.min.js" ></script>
+  <style>
+    .card{
+      width: 100%;
+    }
+    .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+    .responsive{
+      width:100%;
+      max-width:400px;
+      height:auto;
+      }
+    html{
+      scroll-behavior:smooth;
+    }
+    .main{
+      margin-top:40px;
+    }
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color:white;
+  color: red;
+}
+  </style>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="src/images/logo.png">Roti Bakar House</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Resep
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="list.html">Lihat Semua Resep</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="roti1.html">Roti Bakar keju Leleh</a>
+                <a class="dropdown-item" href="roti2.html">Roti Bakar Keju Pelangi</a>
+                <a class="dropdown-item" href="roti3.html">French Toast</a>
+                <a class="dropdown-item" href="roti4.html">Pizza Roti Tawar</a>
+                <a class="dropdown-item" href="roti5.html">Roti keju Jabrig</a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="main">
+      <div class="jumbotron">
+        <h1 class="display-4">Pizza Roti Tawar</h1>
+        
+        <img src="src/images/pic4.jpg" class="card-img-top" alt="...">
+        <hr class="my-4">
+            <!-- ....      -->
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Pizza Roti Tawar</h5>
+                  <p class="card-text">Berikut ini resep dan cara membuat pizza sederhana dengan bahan roti tawar. Anda juga bisa memodifikasi resep ini menggunakan roti Prancis (baguette).</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <a data-toggle="collapse" href="#bahan" role="button" aria-expanded="false" aria-controls="collapseExample"><li class="list-group-item">Bahan (20 buah)</li></a>
+                    <div class="collapse" id="bahan">
+                        <div class="card card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">250 gram daging sapi giling</li>
+                                <li class="list-group-item">250 gram sosis ayam, iris</li>
+                                <li class="list-group-item">250 gram pure tomat</li>
+                                <li class="list-group-item">100 gram keju mozzarella parut</li>
+                                <li class="list-group-item">20 lembar roti tawar</li>
+                                <li class="list-group-item">2 sendok makan minyak goreng</li>
+                                <li class="list-group-item">1 buah bawang bombay, potong dadu</li>
+                                <li class="list-group-item">garam secukupnya</li>
+                                <li class="list-group-item">merica bubuk secukupnya</li>
+                              </ul>
+                        </div>
+            
+                  </div>
+                  <a data-toggle="collapse" href="#bikin" role="button" aria-expanded="false" aria-controls="collapseExample"><li class="list-group-item">Cara Bikin</li></a>
+                  <div class="collapse" id="bikin">
+                      <div class="card card-body">
+                          <ul class="list-group">
+                              <li class="list-group-item">Panaskan minyak goreng, kemudian tumis bawang bombay, pure tomat, sosis, dan daging sapi giling hingga berubah warna. Bumbui dengan garam, lalu sisihkan terlebih dahulu.</li>
+                              <li class="list-group-item">Olesi permukaan roti tawar dengan topping yang sudah dibuat tadi.</li>
+                              <li class="list-group-item">Taburi dengan keju mozzarella parut secukupnya, lalu taburi merica bubuk.</li>
+                              <li class="list-group-item">Olesi permukaan wajan teflon dengan minyak, kemudian panggang roti dengan api kecil. Gunakan penutup wajan agar keju bisa meleleh sempurna.</li>
+                              <li class="list-group-item">Sajikan pizza selagi masih hangat.</li>
+                            </ul>
+                      </div>
+          
+                </div>
+                </div>
+              </div>   
+        <!-- ....      -->
+
+  </div>
+      </div>
+    </div>
+
+<script src="/src/js/app.js"></script>
+<script>
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
