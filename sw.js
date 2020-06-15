@@ -12,7 +12,33 @@ self.addEventListener('install', function(event) {
         cache.addAll([
           '/',
           '/index.html',
-
+          '/offline.html',
+          '/manifest.json',
+          '/src/images/icons/app-icon-48x48.png',
+          '/src/images/icons/app-icon-96x96.png',
+          '/src/images/icons/app-icon-144x144.png',
+          '/src/images/icons/app-icon-192x192.png',
+          '/src/images/icons/app-icon-256x256.png',
+          '/src/images/icons/app-icon-384x384.png',
+          '/src/images/icons/app-icon-512x512.png',
+          '/src/css/app.css',
+          '/src/js/app.js',
+          '/src/images/logo.png',
+          '/tambahan/jquery-3.5.1.slim.min.js',
+          '/tambahan/popper.min.js',
+          '/tambahan/bootstrap.min.js',
+          '/tambahan/bootstrap.min.css',
+          '/list.html',
+          '/roti1.html',
+          '/roti2.html',
+          '/roti3.html',
+          '/roti4.html',
+          '/roti5.html',
+          '/src/images/pic1.jpg',
+          '/src/images/pic2.png',
+          '/src/images/pic3.jpg',
+          '/src/images/pic4.jpg',
+          '/src/images/pic5.jpg'
         ]);
       })
   )
