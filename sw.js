@@ -1,3 +1,4 @@
+Cache-Control: max-age=31536000
 var ver=1;
 var CACHE_STATIC_NAME = 'static-v'+ver;
 var CACHE_DYNAMIC_NAME = 'dynamic-v'+ver;
