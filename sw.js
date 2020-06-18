@@ -58,15 +58,6 @@ self.addEventListener('activate', function(event) {
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request)
-      .then(function(res) {
-        return res;
-      })
-  );
-});
-
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request)
       .then(function(response) {
         if (response) {
           return response;
@@ -80,10 +71,7 @@ self.addEventListener('fetch', function(event) {
                 })
             })
             .catch(function(err) {
-              return caches.open(CACHE_STATIC_NAME)
-                .then(function(cache) {
-                  return cache.match('/offline.html');
-                });
+
             });
         }
       })
