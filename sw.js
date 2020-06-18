@@ -71,7 +71,8 @@ self.addEventListener('fetch', function(event) {
                 })
             })
             .catch(function(err) {
-
+                .then(function(cache) {
+                  return cache.match('/offline.html');
             });
         }
       })
