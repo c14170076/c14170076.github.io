@@ -28,11 +28,11 @@ self.addEventListener('install', function(event) {
           '/tambahan/popper.min.js',
           '/tambahan/bootstrap.min.js',
           '/tambahan/bootstrap.min.css',
-          '/src/images/rsz_pic1.jpg',
-          '/src/images/rsz_pic2.png',
+          '/src/images/pic1.jpg',
+          '/src/images/pic2.png',
           '/src/images/pic3.jpg',
-          '/src/images/rsz_pic4.jpg',
-          '/src/images/rsz_pic5.jpg'
+          '/src/images/pic4.jpg',
+          '/src/images/pic5.jpg'
         ]);
       })
   )
